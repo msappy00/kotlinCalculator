@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         tvNine.setOnClickListener { appendOnExpression("9", true) }
         tvZero.setOnClickListener { appendOnExpression("0", true) }
         tvDot.setOnClickListener { appendOnExpression(".", true) }
+        tvE.setOnClickListener { appendOnExpression( "e", true) }
+        tvPi.setOnClickListener { appendOnExpression( "π", true) }
 
         //Operators
         tvPlus.setOnClickListener { appendOnExpression("+", false) }
@@ -38,6 +40,9 @@ class MainActivity : AppCompatActivity() {
         tvYRoot.setOnClickListener { appendOnExpression("^(1/", false) }
         tvXSquared.setOnClickListener { appendOnExpression("^2", false) }
         tvXToTheY.setOnClickListener { appendOnExpression("^", false) }
+        tvLog.setOnClickListener { appendOnExpression("log10(", false) }
+        tvLn.setOnClickListener { appendOnExpression( "log(", false) }
+        tvBlank.setOnClickListener { appendOnExpression( "", false) }
 
         tvClear.setOnClickListener {
             tvExpression.text = ""

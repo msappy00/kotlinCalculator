@@ -68,6 +68,11 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
+                <TextView
+                    android:id="@+id/tvE"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -98,6 +103,11 @@
 
                 <TextView
                     android:id="@+id/tvSqRoot"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tvPi"
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
@@ -135,6 +145,11 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
+                <TextView
+                    android:id="@+id/tvLog"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -169,6 +184,11 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
+                <TextView
+                    android:id="@+id/tvLn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -200,6 +220,11 @@
 
                 <TextView
                     android:id="@+id/tvXToTheY"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tvBlank"
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 

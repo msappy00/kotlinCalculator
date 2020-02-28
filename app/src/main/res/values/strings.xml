@@ -27,4 +27,8 @@
     <string name="yroot">ʸ√</string>
     <string name="xsquared">x²</string>
     <string name="xtothey">xʸ</string>
+    <string name="e">e</string>
+    <string name="pi">π</string>
+    <string name="log">log₁₀</string>
+    <string name="ln">logₑ</string>
 </resources>
