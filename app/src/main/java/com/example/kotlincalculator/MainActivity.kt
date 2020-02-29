@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         tvZero.setOnClickListener { appendOnExpression("0", true) }
         tvDot.setOnClickListener { appendOnExpression(".", true) }
         tvE.setOnClickListener { appendOnExpression( "e", true) }
-        tvPi.setOnClickListener { appendOnExpression( "π", true) }
+        tvPi.setOnClickListener { appendOnExpression( "pi", true) }
 
         //Operators
         tvPlus.setOnClickListener { appendOnExpression("+", false) }
@@ -42,7 +42,12 @@ class MainActivity : AppCompatActivity() {
         tvXToTheY.setOnClickListener { appendOnExpression("^", false) }
         tvLog.setOnClickListener { appendOnExpression("log10(", false) }
         tvLn.setOnClickListener { appendOnExpression( "log(", false) }
-        tvBlank.setOnClickListener { appendOnExpression( "", false) }
+        tvSine.setOnClickListener { appendOnExpression("sin(", false) }
+        tvCosine.setOnClickListener { appendOnExpression("cos(", false) }
+        tvTangent.setOnClickListener { appendOnExpression("tan(", false) }
+        tvSecant.setOnClickListener { appendOnExpression("1/cos(", false) }
+        tvCosecant.setOnClickListener { appendOnExpression("1/sin(", false) }
+        tvCotangent.setOnClickListener { appendOnExpression("1/tan(", false) }
 
         tvClear.setOnClickListener {
             tvExpression.text = ""

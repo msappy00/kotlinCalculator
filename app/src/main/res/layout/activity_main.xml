@@ -69,7 +69,12 @@
                     android:layout_height="0dp" />
 
                 <TextView
-                    android:id="@+id/tvE"
+                android:id="@+id/tvE"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tvPi"
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
@@ -107,7 +112,12 @@
                     android:layout_height="0dp" />
 
                 <TextView
-                    android:id="@+id/tvPi"
+                    android:id="@+id/tvLog"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tvLn"
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
@@ -146,7 +156,12 @@
                     android:layout_height="0dp" />
 
                 <TextView
-                    android:id="@+id/tvLog"
+                    android:id="@+id/tvSine"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tvSecant"
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
@@ -185,7 +200,12 @@
                     android:layout_height="0dp" />
 
                 <TextView
-                    android:id="@+id/tvLn"
+                    android:id="@+id/tvCosine"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tvCosecant"
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 
@@ -224,7 +244,12 @@
                     android:layout_height="0dp" />
 
                 <TextView
-                    android:id="@+id/tvBlank"
+                    android:id="@+id/tvTangent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tvCotangent"
                     android:layout_width="0dp"
                     android:layout_height="0dp" />
 

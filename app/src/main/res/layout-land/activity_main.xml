@@ -21,6 +21,19 @@
             android:textColor="@color/numberButton"
             android:textSize="30sp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+
+        <TextView
+            android:id="@+id/tvRad"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:text="@string/rad"
+            android:singleLine="true"
+            android:textColor="@color/numberButton"
+            android:textSize="15sp" />
+
         <TextView
             android:id="@+id/tvResult"
             android:layout_width="match_parent"
@@ -30,6 +43,8 @@
             android:singleLine="true"
             android:textColor="@color/numberButton"
             android:textSize="30sp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,6 +87,11 @@
                     style="@style/NumberButtonStyle"
                     android:text="@string/e" />
 
+                <TextView
+                    android:id="@+id/tvPi"
+                    style="@style/NumberButtonStyle"
+                    android:text="@string/pi" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -106,9 +126,14 @@
                     android:text="@string/sqroot" />
 
                 <TextView
-                    android:id="@+id/tvPi"
+                    android:id="@+id/tvLog"
                     style="@style/NumberButtonStyle"
-                    android:text="@string/pi" />
+                    android:text="@string/log" />
+
+                <TextView
+                    android:id="@+id/tvLn"
+                    style="@style/NumberButtonStyle"
+                    android:text="@string/ln" />
 
             </LinearLayout>
 
@@ -144,9 +169,14 @@
                     android:text="@string/yroot" />
 
                 <TextView
-                    android:id="@+id/tvLog"
+                    android:id="@+id/tvSine"
                     style="@style/NumberButtonStyle"
-                    android:text="@string/log" />
+                    android:text="@string/sine" />
+
+                <TextView
+                    android:id="@+id/tvSecant"
+                    style="@style/NumberButtonStyle"
+                    android:text="@string/secant" />
 
             </LinearLayout>
 
@@ -182,9 +212,14 @@
                     android:text="@string/xsquared" />
 
                 <TextView
-                    android:id="@+id/tvLn"
+                    android:id="@+id/tvCosine"
                     style="@style/NumberButtonStyle"
-                    android:text="@string/ln" />
+                    android:text="@string/cosine" />
+
+                <TextView
+                    android:id="@+id/tvCosecant"
+                    style="@style/NumberButtonStyle"
+                    android:text="@string/cosecant" />
 
             </LinearLayout>
 
@@ -221,9 +256,14 @@
                     android:text="@string/xtothey" />
 
                 <TextView
-                    android:id="@+id/tvBlank"
+                    android:id="@+id/tvTangent"
                     style="@style/NumberButtonStyle"
-                    android:text="" />
+                    android:text="@string/tangent" />
+
+                <TextView
+                    android:id="@+id/tvCotangent"
+                    style="@style/NumberButtonStyle"
+                    android:text="@string/cotangent" />
 
             </LinearLayout>
 

@@ -4,7 +4,6 @@
     <string name="zero">0</string>
     <string name="dot">.</string>
     <string name="root">√</string>
-    <string name="rad">Rad</string>
     <string name="clear">CE</string>
     <string name="open">(</string>
     <string name="close">)</string>
@@ -31,4 +30,11 @@
     <string name="pi">π</string>
     <string name="log">log₁₀</string>
     <string name="ln">logₑ</string>
+    <string name="rad">RAD</string>
+    <string name="sine">sin</string>
+    <string name="cosine">cos</string>
+    <string name="tangent">tan</string>
+    <string name="secant">sec</string>
+    <string name="cosecant">csc</string>
+    <string name="cotangent">cot</string>
 </resources>
