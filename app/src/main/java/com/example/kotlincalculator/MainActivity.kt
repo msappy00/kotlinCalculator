@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
+import net.objecthunter.exp4j.operator.Operator
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,11 +42,21 @@ class MainActivity : AppCompatActivity() {
         tvXToTheY.setOnClickListener { appendOnExpression("^", false) }
         tvLog.setOnClickListener { appendOnExpression("log10(", false) }
         tvLn.setOnClickListener { appendOnExpression( "log(", false) }
-        tvSine.setOnClickListener { appendOnExpression("sin(", false) }
-        tvCosine.setOnClickListener { appendOnExpression("cos(", false) }
-        tvTangent.setOnClickListener { appendOnExpression("tan(", false) }
+        tvSine.setOnClickListener { if (tvRad.text == "DEG") {
+            appendOnExpression("sin(|", false) }
+            else appendOnExpression("sin(", false) }
+        tvCosine.setOnClickListener { if (tvRad.text == "DEG") {
+            appendOnExpression("cos(|", false) }
+        else appendOnExpression("cos(", false) }
+        tvTangent.setOnClickListener { if (tvRad.text == "DEG") {
+            appendOnExpression("tan(|", false) }
+        else appendOnExpression("tan(", false) }
         tvExp.setOnClickListener { appendOnExpression( "exp(", false) }
-
+        tvFac.setOnClickListener { appendOnExpression("!", false) }
+        tvDeg.setOnClickListener {
+            if (tvRad.text == "DEG") {
+                tvRad.text = "RAD"
+        } else tvRad.text = "DEG" }
         tvClear.setOnClickListener {
             tvExpression.text = ""
             tvResult.text = ""
@@ -59,10 +70,45 @@ class MainActivity : AppCompatActivity() {
             tvResult.text = ""
         }
 
+        val factorial: Operator = object :
+            Operator(
+                "!",
+                1,
+                true,
+                PRECEDENCE_POWER + 1
+            ) {
+            override fun apply(vararg args: Double): Double {
+                val arg = args[0].toInt()
+                require(arg.toDouble() == args[0]) { "Operand for factorial has to be an integer" }
+                require(arg >= 0) { "The operand of the factorial can not be less than zero" }
+                var result = 1.0
+                for (i in 1..arg) {
+                    result *= i.toDouble()
+                }
+                return result
+            }
+        }
+
+        val toRadians: Operator = object :
+            Operator(
+                "|",
+                1,
+                false,
+                PRECEDENCE_POWER + 1
+            ) {
+            override fun apply(vararg args: Double): Double {
+                val arg = args[0]
+                return arg * (Math.PI/180)
+            }
+        }
+
         tvEquals.setOnClickListener {
             try {
 
-                val expression = ExpressionBuilder(tvExpression.text.toString()).build()
+                val expression = ExpressionBuilder(tvExpression.text.toString())
+                    .operator(factorial)
+                    .operator(toRadians)
+                    .build()
                 val result = expression.evaluate()
                 val longResult = result.toLong()
                 if (result == longResult.toDouble())
@@ -93,3 +139,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+

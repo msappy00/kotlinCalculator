@@ -30,11 +30,11 @@
     <string name="pi">π</string>
     <string name="log">log₁₀</string>
     <string name="ln">logₑ</string>
-    <string name="rad">RAD</string>
     <string name="sine">sin</string>
     <string name="cosine">cos</string>
     <string name="tangent">tan</string>
-    <string name="secant">sec</string>
-    <string name="cosecant">csc</string>
-    <string name="cotangent">cot</string>
+    <string name="exp">exp</string>
+    <string name="exclamation">!</string>
+    <string name="rad">RAD</string>
+    <string name="deg">DEG</string>
 </resources>
