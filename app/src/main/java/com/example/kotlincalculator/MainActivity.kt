@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         tvOpen.setOnClickListener { appendOnExpression("(", false) }
         tvClose.setOnClickListener { appendOnExpression(")", false) }
         tvInverse.setOnClickListener { appendOnExpression("^(-1)", false) }
-        tvSqRoot.setOnClickListener { appendOnExpression ("^(1/2)", false) }
+        tvSqRoot.setOnClickListener { appendOnExpression ("sqrt", false) }
         tvYRoot.setOnClickListener { appendOnExpression("^(1/", false) }
         tvXSquared.setOnClickListener { appendOnExpression("^2", false) }
         tvXToTheY.setOnClickListener { appendOnExpression("^", false) }
@@ -45,9 +44,7 @@ class MainActivity : AppCompatActivity() {
         tvSine.setOnClickListener { appendOnExpression("sin(", false) }
         tvCosine.setOnClickListener { appendOnExpression("cos(", false) }
         tvTangent.setOnClickListener { appendOnExpression("tan(", false) }
-        tvSecant.setOnClickListener { appendOnExpression("1/cos(", false) }
-        tvCosecant.setOnClickListener { appendOnExpression("1/sin(", false) }
-        tvCotangent.setOnClickListener { appendOnExpression("1/tan(", false) }
+        tvExp.setOnClickListener { appendOnExpression( "exp(", false) }
 
         tvClear.setOnClickListener {
             tvExpression.text = ""
@@ -95,6 +92,4 @@ class MainActivity : AppCompatActivity() {
             tvResult.text = ""
         }
     }
-
-
 }
