@@ -1,3 +1,3 @@
 # kotlinCalculator
 a simple android calculator made using kotlin
-![screenshot](https://imgur.com/a/UWG8Yl7)
+![screenshot](https://imgur.com/ti6ASt2)
