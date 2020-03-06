@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
+import net.objecthunter.exp4j.function.Function
 import net.objecthunter.exp4j.operator.Operator
 
 class MainActivity : AppCompatActivity() {
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         tvLog.setOnClickListener { appendOnExpression("log10(", false) }
         tvLn.setOnClickListener { appendOnExpression( "log(", false) }
         tvSine.setOnClickListener { if (tvRad.text == "DEG") {
-            appendOnExpression("sin(|", false) }
+            appendOnExpression("sin(toRadians(", false) }
             else appendOnExpression("sin(", false) }
         tvCosine.setOnClickListener { if (tvRad.text == "DEG") {
             appendOnExpression("cos(|", false) }
@@ -79,8 +80,8 @@ class MainActivity : AppCompatActivity() {
             ) {
             override fun apply(vararg args: Double): Double {
                 val arg = args[0].toInt()
-                require(arg.toDouble() == args[0]) { "Operand for factorial has to be an integer" }
-                require(arg >= 0) { "The operand of the factorial can not be less than zero" }
+                require(arg.toDouble() == args[0]) //{ "Operand for factorial has to be an integer" }
+                require(arg >= 0) //{ "The operand of the factorial can not be less than zero" }
                 var result = 1.0
                 for (i in 1..arg) {
                     result *= i.toDouble()
@@ -89,25 +90,20 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val toRadians: Operator = object :
-            Operator(
-                "|",
-                1,
-                false,
-                PRECEDENCE_POWER + 1
-            ) {
-            override fun apply(vararg args: Double): Double {
-                val arg = args[0]
-                return arg * (Math.PI/180)
+        val toRadians: Function = object :
+            Function("toRadians", 1) {
+                override fun apply(vararg args: Double): Double {
+                    val arg = args[0]
+                    return Math.toRadians(arg)
+                }
             }
-        }
 
         tvEquals.setOnClickListener {
             try {
 
                 val expression = ExpressionBuilder(tvExpression.text.toString())
                     .operator(factorial)
-                    .operator(toRadians)
+                    .functions(toRadians)
                     .build()
                 val result = expression.evaluate()
                 val longResult = result.toLong()
