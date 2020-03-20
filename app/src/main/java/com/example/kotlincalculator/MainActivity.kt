@@ -47,10 +47,10 @@ class MainActivity : AppCompatActivity() {
             appendOnExpression("sin(toRadians(", false) }
             else appendOnExpression("sin(", false) }
         tvCosine.setOnClickListener { if (tvRad.text == "DEG") {
-            appendOnExpression("cos(|", false) }
+            appendOnExpression("cos(toRadians(", false) }
         else appendOnExpression("cos(", false) }
         tvTangent.setOnClickListener { if (tvRad.text == "DEG") {
-            appendOnExpression("tan(|", false) }
+            appendOnExpression("tan(toRadians(", false) }
         else appendOnExpression("tan(", false) }
         tvExp.setOnClickListener { appendOnExpression( "exp(", false) }
         tvFac.setOnClickListener { appendOnExpression("!", false) }
