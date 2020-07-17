@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
 import net.objecthunter.exp4j.function.Function
 import net.objecthunter.exp4j.operator.Operator
+import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
 
@@ -107,10 +108,11 @@ class MainActivity : AppCompatActivity() {
                     .build()
                 val result = expression.evaluate()
                 val longResult = result.toLong()
+                val df = DecimalFormat("#.##########")
                 if (result == longResult.toDouble())
-                    tvResult.text = longResult.toString()
+                    tvResult.text = df.format(longResult).toString()
                 else
-                    tvResult.text = result.toString()
+                    tvResult.text = df.format(result).toString()
 
             } catch (e: Exception) {
                 Log.d("Exception", " message : " + e.message)
