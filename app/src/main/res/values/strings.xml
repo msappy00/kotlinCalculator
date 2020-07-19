@@ -1,40 +1,40 @@
 <resources>
-    <string name="app_name">Kotlin Calculator</string>
-    <string name="equals">=</string>
-    <string name="zero">0</string>
-    <string name="dot">.</string>
-    <string name="root">√</string>
+    <string name="app_name">Calculator</string>
+    <string name="equals" translatable="false">=</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="dot" translatable="false">.</string>
+    <string name="root" translatable="false">√</string>
     <string name="clear">CE</string>
-    <string name="open">(</string>
-    <string name="close">)</string>
-    <string name="divide">/</string>
-    <string name="_7">7</string>
-    <string name="_8">8</string>
-    <string name="_9">9</string>
-    <string name="mul">*</string>
-    <string name="_4">4</string>
-    <string name="_5">5</string>
-    <string name="_6">6</string>
-    <string name="minus">-</string>
-    <string name="_1">1</string>
-    <string name="_2">2</string>
-    <string name="_3">3</string>
-    <string name="plus">+</string>
-    <string name="back">⌫</string>
-    <string name="inverse">1/x</string>
-    <string name="sqroot">√</string>
-    <string name="yroot">ʸ√</string>
-    <string name="xsquared">x²</string>
-    <string name="xtothey">xʸ</string>
-    <string name="e">e</string>
-    <string name="pi">π</string>
+    <string name="open" translatable="false">(</string>
+    <string name="close" translatable="false">)</string>
+    <string name="divide" translatable="false">/</string>
+    <string name="_7" translatable="false">7</string>
+    <string name="_8" translatable="false">8</string>
+    <string name="_9" translatable="false">9</string>
+    <string name="mul" translatable="false">*</string>
+    <string name="_4" translatable="false">4</string>
+    <string name="_5" translatable="false">5</string>
+    <string name="_6" translatable="false">6</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_3" translatable="false">3</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="back" translatable="false">⌫</string>
+    <string name="inverse" translatable="false">1/x</string>
+    <string name="sqroot" translatable="false">√</string>
+    <string name="yroot" translatable="false">ʸ√</string>
+    <string name="xsquared" translatable="false">x²</string>
+    <string name="xtothey" translatable="false">xʸ</string>
+    <string name="e" translatable="false">e</string>
+    <string name="pi" translatable="false">π</string>
     <string name="log">log₁₀</string>
     <string name="ln">logₑ</string>
     <string name="sine">sin</string>
     <string name="cosine">cos</string>
     <string name="tangent">tan</string>
     <string name="exp">exp</string>
-    <string name="exclamation">!</string>
+    <string name="exclamation" translatable="false">!</string>
     <string name="rad">RAD</string>
     <string name="deg">DEG</string>
 </resources>
