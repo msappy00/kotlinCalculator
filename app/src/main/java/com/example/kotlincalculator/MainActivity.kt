@@ -38,9 +38,7 @@ class MainActivity : AppCompatActivity() {
         tvOpen.setOnClickListener { appendOnExpression("(", false) }
         tvClose.setOnClickListener { appendOnExpression(")", false) }
         tvInverse.setOnClickListener { appendOnExpression("^(-1)", false) }
-        tvSqRoot.setOnClickListener { appendOnExpression ("sqrt", false) }
         tvYRoot.setOnClickListener { appendOnExpression("^(1/", false) }
-        tvXSquared.setOnClickListener { appendOnExpression("^2", false) }
         tvXToTheY.setOnClickListener { appendOnExpression("^", false) }
         tvLog.setOnClickListener { appendOnExpression("log10(", false) }
         tvLn.setOnClickListener { appendOnExpression( "log(", false) }
@@ -53,12 +51,11 @@ class MainActivity : AppCompatActivity() {
         tvTangent.setOnClickListener { if (tvRad.text == "DEG") {
             appendOnExpression("tan(toRadians(", false) }
         else appendOnExpression("tan(", false) }
-        tvExp.setOnClickListener { appendOnExpression( "exp(", false) }
         tvFac.setOnClickListener { appendOnExpression("!", false) }
         tvDeg.setOnClickListener {
-            if (tvRad.text == "DEG") {
-                tvRad.text = "RAD"
-        } else tvRad.text = "DEG" }
+            if (tvRad.text == getString(R.string.deg)) {
+                tvRad.text = getString(R.string.rad)
+        } else tvRad.text = getString(R.string.deg) }
         tvClear.setOnClickListener {
             tvExpression.text = ""
             tvResult.text = ""

@@ -4,7 +4,7 @@
     <string name="zero" translatable="false">0</string>
     <string name="dot" translatable="false">.</string>
     <string name="root" translatable="false">√</string>
-    <string name="clear">CE</string>
+    <string name="clear" translatable="false">CE</string>
     <string name="open" translatable="false">(</string>
     <string name="close" translatable="false">)</string>
     <string name="divide" translatable="false">/</string>
@@ -28,13 +28,13 @@
     <string name="xtothey" translatable="false">xʸ</string>
     <string name="e" translatable="false">e</string>
     <string name="pi" translatable="false">π</string>
-    <string name="log">log₁₀</string>
-    <string name="ln">logₑ</string>
-    <string name="sine">sin</string>
-    <string name="cosine">cos</string>
-    <string name="tangent">tan</string>
-    <string name="exp">exp</string>
+    <string name="log" translatable="false">log₁₀</string>
+    <string name="ln" translatable="false">logₑ</string>
+    <string name="sine" translatable="false">sin</string>
+    <string name="cosine" translatable="false">cos</string>
+    <string name="tangent" translatable="false">tan</string>
+    <string name="exp" translatable="false">exp</string>
     <string name="exclamation" translatable="false">!</string>
-    <string name="rad">RAD</string>
-    <string name="deg">DEG</string>
+    <string name="rad" translatable="false">RAD</string>
+    <string name="deg" translatable="false">DEG</string>
 </resources>

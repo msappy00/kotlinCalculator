@@ -3,7 +3,7 @@
     <string name="equals">=</string>
     <string name="dot">.</string>
     <string name="root">√</string>
-    <string name="clear">清除</string>
+    <string name="clear">CE</string>
     <string name="open">(</string>
     <string name="divide">/</string>
     <string name="_7">7</string>
@@ -26,14 +26,14 @@
     <string name="xtothey">xʸ</string>
     <string name="e">e</string>
     <string name="pi">π</string>
-    <string name="log">對數₁₀</string>
-    <string name="ln">對數ₑ</string>
-    <string name="sine">正弦</string>
-    <string name="cosine">餘弦</string>
-    <string name="tangent">切線</string>
-    <string name="exp">指數</string>
+    <string name="log">log₁₀</string>
+    <string name="ln">logₑ</string>
+    <string name="sine">sin</string>
+    <string name="cosine">cos</string>
+    <string name="tangent">tan</string>
+    <string name="exp">^</string>
     <string name="exclamation">!</string>
-    <string name="rad">弧度</string>
-    <string name="deg">度</string>
+    <string name="rad">RAD</string>
+    <string name="deg">DEG</string>
     <string name="zero">0</string>
 </resources>

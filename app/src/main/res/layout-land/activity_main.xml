@@ -14,27 +14,27 @@
         <TextView
             android:id="@+id/tvExpression"
             android:layout_width="match_parent"
-            android:layout_height="30sp"
+            android:layout_height="50sp"
             android:ellipsize="start"
             android:gravity="end"
             android:singleLine="true"
             android:textColor="@android:color/white"
-            android:textSize="20sp"/>
+            android:textSize="30sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="35sp">
+            android:layout_height="50sp">
 
             <TextView
                 android:id="@+id/tvRad"
                 android:layout_width="wrap_content"
-                android:layout_height="50sp"
+                android:layout_height="30sp"
                 android:ellipsize="start"
                 android:gravity="start"
                 android:singleLine="true"
                 android:textColor="@android:color/white"
                 android:text="@string/rad"
-                android:textSize="15sp" />
+                android:textSize="25sp" />
 
         <TextView
             android:id="@+id/tvResult"
@@ -44,7 +44,7 @@
             android:gravity="end"
             android:singleLine="true"
             android:textColor="@android:color/white"
-            android:textSize="30sp" />
+            android:textSize="40sp" />
 
         </LinearLayout>
 
@@ -52,49 +52,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tvClear"
-                    style="@style/ActionButtonStyle"
-                    android:text="@string/clear" />
-
-                <TextView
-                    android:id="@+id/tvOpen"
-                    style="@style/ActionButtonStyle"
-                    android:text="@string/open" />
-
-                <TextView
-                    android:id="@+id/tvClose"
-                    style="@style/ActionButtonStyle"
-                    android:text="@string/close" />
-
-                <TextView
-                    android:id="@+id/tvDivide"
-                    style="@style/ActionButtonStyle"
-                    android:text="@string/divide" />
-
-                <TextView
-                    android:id="@+id/tvInverse"
-                    style="@style/NumberButtonStyle"
-                    android:text="@string/inverse" />
-
-                <TextView
-                    android:id="@+id/tvE"
-                    style="@style/NumberButtonStyle"
-                    android:text="@string/e" />
-
-                <TextView
-                    android:id="@+id/tvExp"
-                    style="@style/NumberButtonStyle"
-                    android:text="eˣ" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -118,14 +75,22 @@
                     android:text="@string/_9" />
 
                 <TextView
-                    android:id="@+id/tvMul"
+                    android:id="@+id/tvBack"
                     style="@style/ActionButtonStyle"
-                    android:text="@string/mul" />
+                    android:scaleType="center"
+                    android:text="@string/back" />
 
                 <TextView
-                    android:id="@+id/tvSqRoot"
+                    android:id="@+id/tvClear"
+                    style="@style/ActionButtonStyle"
+                    android:text="@string/clear" />
+
+
+
+                <TextView
+                    android:id="@+id/tvE"
                     style="@style/NumberButtonStyle"
-                    android:text="@string/sqroot" />
+                    android:text="@string/e" />
 
                 <TextView
                     android:id="@+id/tvLog"
@@ -161,14 +126,19 @@
                     android:text="@string/_6" />
 
                 <TextView
+                    android:id="@+id/tvPlus"
+                    style="@style/ActionButtonStyle"
+                    android:text="@string/plus" />
+
+                <TextView
                     android:id="@+id/tvMinus"
                     style="@style/ActionButtonStyle"
                     android:text="@string/minus" />
 
                 <TextView
-                    android:id="@+id/tvYRoot"
+                    android:id="@+id/tvInverse"
                     style="@style/NumberButtonStyle"
-                    android:text="@string/yroot" />
+                    android:text="@string/inverse" />
 
                 <TextView
                     android:id="@+id/tvSine"
@@ -204,14 +174,19 @@
                     android:text="@string/_3" />
 
                 <TextView
-                    android:id="@+id/tvPlus"
+                    android:id="@+id/tvMul"
                     style="@style/ActionButtonStyle"
-                    android:text="@string/plus" />
+                    android:text="@string/mul" />
 
                 <TextView
-                    android:id="@+id/tvXSquared"
+                    android:id="@+id/tvDivide"
+                    style="@style/ActionButtonStyle"
+                    android:text="@string/divide" />
+
+                <TextView
+                    android:id="@+id/tvYRoot"
                     style="@style/NumberButtonStyle"
-                    android:text="@string/xsquared" />
+                    android:text="@string/yroot" />
 
                 <TextView
                     android:id="@+id/tvCosine"
@@ -242,10 +217,14 @@
                     android:text="@string/zero" />
 
                 <TextView
-                    android:id="@+id/tvBack"
+                    android:id="@+id/tvOpen"
                     style="@style/ActionButtonStyle"
-                    android:scaleType="center"
-                    android:text="@string/back" />
+                    android:text="@string/open" />
+
+                <TextView
+                    android:id="@+id/tvClose"
+                    style="@style/ActionButtonStyle"
+                    android:text="@string/close" />
 
                 <TextView
                     android:id="@+id/tvEquals"
