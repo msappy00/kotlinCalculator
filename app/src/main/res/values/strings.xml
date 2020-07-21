@@ -3,7 +3,6 @@
     <string name="equals" translatable="false">=</string>
     <string name="zero" translatable="false">0</string>
     <string name="dot" translatable="false">.</string>
-    <string name="root" translatable="false">√</string>
     <string name="clear" translatable="false">CE</string>
     <string name="open" translatable="false">(</string>
     <string name="close" translatable="false">)</string>
@@ -22,18 +21,15 @@
     <string name="plus" translatable="false">+</string>
     <string name="back" translatable="false">⌫</string>
     <string name="inverse" translatable="false">1/x</string>
-    <string name="sqroot" translatable="false">√</string>
-    <string name="yroot" translatable="false">ʸ√</string>
-    <string name="xsquared" translatable="false">x²</string>
-    <string name="xtothey" translatable="false">xʸ</string>
+    <string name="yroot" translatable="false">√</string>
+    <string name="xtothey" translatable="false">^</string>
     <string name="e" translatable="false">e</string>
     <string name="pi" translatable="false">π</string>
-    <string name="log" translatable="false">log₁₀</string>
-    <string name="ln" translatable="false">logₑ</string>
+    <string name="log" translatable="false">log</string>
+    <string name="ln" translatable="false">ln</string>
     <string name="sine" translatable="false">sin</string>
     <string name="cosine" translatable="false">cos</string>
     <string name="tangent" translatable="false">tan</string>
-    <string name="exp" translatable="false">exp</string>
     <string name="exclamation" translatable="false">!</string>
     <string name="rad" translatable="false">RAD</string>
     <string name="deg" translatable="false">DEG</string>
