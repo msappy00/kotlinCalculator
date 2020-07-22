@@ -1,36 +1,54 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="equals" translatable="false">=</string>
+    <string name="equals_description" translatable="true">equals</string>
     <string name="zero" translatable="false">0</string>
     <string name="dot" translatable="false">.</string>
+    <string name="dot_description" translatable="true">point</string>
     <string name="clear" translatable="false">CE</string>
+    <string name="clear_description" translatable="true">clear everything</string>
     <string name="open" translatable="false">(</string>
     <string name="close" translatable="false">)</string>
     <string name="divide" translatable="false">/</string>
+    <string name="divide_description" translatable="true">divide by</string>
     <string name="_7" translatable="false">7</string>
     <string name="_8" translatable="false">8</string>
     <string name="_9" translatable="false">9</string>
     <string name="mul" translatable="false">*</string>
+    <string name="times_description" translatable="true">times</string>
     <string name="_4" translatable="false">4</string>
     <string name="_5" translatable="false">5</string>
     <string name="_6" translatable="false">6</string>
     <string name="minus" translatable="false">-</string>
+    <string name="minus_description" translatable="true">minus</string>
     <string name="_1" translatable="false">1</string>
     <string name="_2" translatable="false">2</string>
     <string name="_3" translatable="false">3</string>
     <string name="plus" translatable="false">+</string>
     <string name="back" translatable="false">⌫</string>
+    <string name="eraseLeft_description" translatable="true">erase to the left</string>
     <string name="inverse" translatable="false">1/x</string>
+    <string name="inverse_description" translatable="true">inverse</string>
     <string name="yroot" translatable="false">√</string>
+    <string name="root_description" translatable="true">root</string>
     <string name="xtothey" translatable="false">^</string>
+    <string name="exponent_description" translatable="true">exponent</string>
     <string name="e" translatable="false">e</string>
     <string name="pi" translatable="false">π</string>
+    <string name="pi_description" translatable="true">pi</string>
     <string name="log" translatable="false">log</string>
+    <string name="log_description" translatable="true">logarithm base 10</string>
     <string name="ln" translatable="false">ln</string>
+    <string name="ln_description" translatable="true">logarithm base e</string>
     <string name="sine" translatable="false">sin</string>
+    <string name="sine_description" translatable="true">sine</string>
     <string name="cosine" translatable="false">cos</string>
+    <string name="cosine_description" translatable="true">cosine</string>
     <string name="tangent" translatable="false">tan</string>
+    <string name="tangent_description" translatable="true">tangent</string>
     <string name="exclamation" translatable="false">!</string>
+    <string name="factorial_description" translatable="true">factorial</string>
     <string name="rad" translatable="false">RAD</string>
     <string name="deg" translatable="false">DEG</string>
+    <string name="degToggle_description" translatable="true">toggle between degrees and radians</string>
 </resources>

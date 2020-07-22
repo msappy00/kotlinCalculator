@@ -1,35 +1,53 @@
 <resources>
     <string name="app_name">計算器</string>
     <string name="equals">=</string>
+    <string name="equals_description" translatable="true">等於</string>
     <string name="dot">.</string>
+    <string name="dot_description" translatable="true">小數點</string>
     <string name="clear">CE</string>
+    <string name="clear_description" translatable="true">清楚</string>
     <string name="open">(</string>
     <string name="divide">/</string>
+    <string name="divide_description" translatable="true">除以</string>
     <string name="_7">7</string>
     <string name="_8">8</string>
     <string name="_9">9</string>
     <string name="mul">*</string>
+    <string name="times_description" translatable="true">乘</string>
     <string name="_4">4</string>
     <string name="_5">5</string>
     <string name="_6">6</string>
     <string name="minus">-</string>
+    <string name="minus_description" translatable="true">減去</string>
     <string name="_1">1</string>
     <string name="_2">2</string>
     <string name="_3">3</string>
     <string name="plus">+</string>
     <string name="back">⌫</string>
+    <string name="eraseLeft_description" translatable="true">向左擦除</string>
     <string name="inverse">1/x</string>
+    <string name="inverse_description" translatable="true">逆</string>
     <string name="yroot">√</string>
+    <string name="root_description" translatable="true">方根</string>
     <string name="xtothey">^</string>
+    <string name="exponent_description" translatable="true">指数</string>
     <string name="e">e</string>
     <string name="pi">π</string>
+    <string name="pi_description" translatable="true">pi</string>
     <string name="log">log</string>
+    <string name="log_description" translatable="true">以10為底的對數</string>
     <string name="ln">ln</string>
+    <string name="ln_description" translatable="true">自然對數</string>
     <string name="sine">sin</string>
+    <string name="sine_description" translatable="true">正弦</string>
     <string name="cosine">cos</string>
+    <string name="cosine_description" translatable="true">餘弦</string>
     <string name="tangent">tan</string>
+    <string name="tangent_description" translatable="true">切線</string>
     <string name="exclamation">!</string>
+    <string name="factorial_description" translatable="true">阶乘</string>
     <string name="rad">RAD</string>
     <string name="deg">DEG</string>
+    <string name="degToggle_description" translatable="true">在度和弧度之间切换</string>
     <string name="zero">0</string>
 </resources>

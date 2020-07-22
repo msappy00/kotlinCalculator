@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/tvExpression"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
+            android:layout_height="40sp"
             android:ellipsize="start"
             android:gravity="end"
             android:singleLine="true"
@@ -23,7 +23,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50sp">
+            android:layout_height="40sp">
 
             <TextView
                 android:id="@+id/tvRad"
@@ -39,12 +39,12 @@
         <TextView
             android:id="@+id/tvResult"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
+            android:layout_height="40sp"
             android:ellipsize="end"
             android:gravity="end"
             android:singleLine="true"
             android:textColor="@android:color/white"
-            android:textSize="40sp" />
+            android:textSize="35sp" />
 
         </LinearLayout>
 
@@ -76,12 +76,14 @@
 
                 <TextView
                     android:id="@+id/tvBack"
+                    android:contentDescription="@string/eraseLeft_description"
                     style="@style/ActionButtonStyle"
                     android:scaleType="center"
                     android:text="@string/back" />
 
                 <TextView
                     android:id="@+id/tvClear"
+                    android:contentDescription="@string/clear_description"
                     style="@style/ActionButtonStyle"
                     android:text="@string/clear" />
 
@@ -94,11 +96,13 @@
 
                 <TextView
                     android:id="@+id/tvLog"
+                    android:contentDescription="@string/log_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/log" />
 
                 <TextView
                     android:id="@+id/tvLn"
+                    android:contentDescription="@string/ln_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/ln" />
 
@@ -132,21 +136,25 @@
 
                 <TextView
                     android:id="@+id/tvMinus"
+                    android:contentDescription="@string/minus_description"
                     style="@style/ActionButtonStyle"
                     android:text="@string/minus" />
 
                 <TextView
                     android:id="@+id/tvInverse"
+                    android:contentDescription="@string/inverse_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/inverse" />
 
                 <TextView
                     android:id="@+id/tvSine"
+                    android:contentDescription="@string/sine_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/sine" />
 
                 <TextView
                     android:id="@+id/tvPi"
+                    android:contentDescription="@string/pi_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/pi" />
 
@@ -175,26 +183,31 @@
 
                 <TextView
                     android:id="@+id/tvMul"
+                    android:contentDescription="@string/times_description"
                     style="@style/ActionButtonStyle"
                     android:text="@string/mul" />
 
                 <TextView
                     android:id="@+id/tvDivide"
+                    android:contentDescription="@string/divide_description"
                     style="@style/ActionButtonStyle"
                     android:text="@string/divide" />
 
                 <TextView
                     android:id="@+id/tvYRoot"
+                    android:contentDescription="@string/root_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/yroot" />
 
                 <TextView
                     android:id="@+id/tvCosine"
+                    android:contentDescription="@string/cosine_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/cosine" />
 
                 <TextView
                     android:id="@+id/tvTangent"
+                    android:contentDescription="@string/tangent_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/tangent" />
 
@@ -208,6 +221,7 @@
 
                 <TextView
                     android:id="@+id/tvDot"
+                    android:contentDescription="@string/dot_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/dot" />
 
@@ -228,21 +242,25 @@
 
                 <TextView
                     android:id="@+id/tvEquals"
+                    android:contentDescription="@string/equals_description"
                     style="@style/ActionButtonStyle"
                     android:text="@string/equals" />
 
                 <TextView
                     android:id="@+id/tvXToTheY"
+                    android:contentDescription="@string/exponent_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/xtothey" />
 
                 <TextView
                     android:id="@+id/tvFac"
+                    android:contentDescription="@string/factorial_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/exclamation" />
 
                 <TextView
                     android:id="@+id/tvDeg"
+                    android:contentDescription="@string/degToggle_description"
                     style="@style/NumberButtonStyle"
                     android:text="@string/deg" />
 
